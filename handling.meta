@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+  Handling file 
+  Ford Mustang GT 2019
+  @imperial | 11 Oct. 2022
+  www.connectroleplay.com
+-->
+<CHandlingDataMgr>
+  <HandlingData>
+    <Item type="CHandlingData">
+      <handlingName>MUSTANG19</handlingName> <!-- identifier (no more than 14 characters) -->
+      <fMass value="1600.000000" /> <!-- weight of vehicle in kgs -->
+      <fInitialDragCoeff value="6.000000" /> <!-- drag coefficient of the vehicle -->
+      <fPercentSubmerged value="85.000000" />  <!-- percentage of vehicle height in the water before vehicle "floats" -->
+      <vecCentreOfMassOffset x="0.000000" y="-0.100000" z="0.000000" /> <!-- shifts center of gravity in meters from side to side 0 = center of gravity will be in the center of vehicle -->
+      <vecInertiaMultiplier x="1.000000" y="1.000000" z="2.000000" /> <!-- resistance to rotation around each axis -->
+      <fDriveBiasFront value="0.000000" /> <!-- determine whether a vehicle is front, rear, or four wheel drive -->
+      <nInitialDriveGears value="6" /> <!-- how many forward speeds a transmission contains -->
+      <fInitialDriveForce value="0.390000" /> <!-- drive force -->
+      <fDriveInertia value="1.200000" /> <!-- how fast an engine will rev -->
+      <fClutchChangeRateScaleUpShift value="2.000000" /> <!-- clutch speed multiplier on up shifts, bigger = faster -->
+      <fClutchChangeRateScaleDownShift value="2.000000" /> <!-- clutch speed multiplier on down shifts, bigger = faster -->
+      <fInitialDriveMaxFlatVel value="235.000000" /> <!-- Determines the speed at redline in top gear -->
+      <fBrakeForce value="0.800000" /> <!-- multiplies the game's calculation of deceleration. bigger = harder braking -->
+      <fBrakeBiasFront value="0.650000" /> <!-- distribution of braking force between the front and rear axles -->
+      <fHandBrakeForce value="0.800000" /> <!-- braking power for handbrake. bigger number = harder braking -->
+      <fSteeringLock value="40.000000" /> <!-- multiplier of the game's calculation of the angle a steer wheel -->
+      <fTractionCurveMax value="2.250000" /> <!-- cornering grip of the vehicle as a multiplier of the tire surface friction. -->
+      <fTractionCurveMin value="1.800000" /> <!-- accelerating/braking grip of the vehicle as a multiplier of the tire surface friction. -->
+      <fTractionCurveLateral value="22.500000" /> <!-- shape of lateral traction curve. -->
+      <fTractionSpringDeltaMax value="0.150000" /> <!-- determines at what distance above the ground the car will lose traction. -->
+      <fLowSpeedTractionLossMult value="1.000000" /> <!-- how much traction is reduced at low speed -->
+      <fCamberStiffnesss value="0.000000" /> <!-- this value modify the grip of the car when you're drifting -->
+      <fTractionBiasFront value="0.500000" /> <!-- determines the distribution of traction from front to rear -->
+      <fTractionLossMult value="1.000000" /> <!-- how much grip is changed when driving on asphalt and mud -->
+      <fSuspensionForce value="1.800000" /> <!-- affects how strong suspension is -->
+      <fSuspensionCompDamp value="0.900000" /> <!-- damping during strut compression. bigger = stiffer -->
+      <fSuspensionReboundDamp value="1.400000" /> <!-- damping during strut rebound. bigger = stiffer -->
+      <fSuspensionUpperLimit value="0.050000" /> <!-- visual limit* how far can wheels move up / down from original position -->
+      <fSuspensionLowerLimit value="-0.100000" /> <!-- visual limit* how far can wheels move up / down from original position -->
+      <fSuspensionRaise value="0.000000" /> <!-- The amount that the suspension raises the body off the wheels -->
+      <fSuspensionBiasFront value="0.470000" /> <!-- This value determines which suspension is stronger, front or rear -->
+      <fAntiRollBarForce value="0.900000" /> <!-- Larger Numbers = less body roll -->
+      <fAntiRollBarBiasFront value="0.250000" /> <!-- bias between front and rear for the anti-roll bar 0=front 1=rear -->
+      <fRollCentreHeightFront value="0.000000" /> <!-- Larger Numbers = less rollovers -->
+      <fRollCentreHeightRear value="0.000000" /> <!-- modify the weight transmission during an acceleration between the front and rear. -->
+      <fCollisionDamageMult value="0.700000" /> <!-- multiplies the game's calculation of damage to the vehicle by collision -->
+      <fWeaponDamageMult value="1.000000" /> <!-- multiplies the game's calculation of damage to the vehicle by weapons -->
+      <fDeformationDamageMult value="0.700000" /> <!-- multiplies the game's calculation of deformation damage -->
+      <fEngineDamageMult value="1.500000" /> <!-- multiplies the game's calculation of damage to the engine, causing explosion or engine failure -->
+      <fPetrolTankVolume value="60.000000" /> <!-- amount of petrol that will leak after shooting the vehicle's petrol tank. Also used by some fuel-usage scripts -->
+      <fOilVolume value="4.500000" /> <!-- black smoke time before engine dies -->
+      <fSeatOffsetDistX value="0.000000" /> <!-- value: Driver > passenger -->
+      <fSeatOffsetDistY value="-0.100000" /> <!-- value: Trunk > hood -->
+      <fSeatOffsetDistZ value="0.100000" /> <!-- value: Undercarriage > roof -->
+      <nMonetaryValue value="150000" /> <!-- vehicle worth -->
+      <strModelFlags>440010</strModelFlags> <!-- the following flags are written in HEX. Rightmost digit is the first one -->
+      <strHandlingFlags>0</strHandlingFlags> <!-- Refer to for table values https://gtamods.com/wiki/Handling.meta -->
+      <strDamageFlags>0</strDamageFlags>
+      <AIHandling>SPORTS_CAR</AIHandling> <!-- AI driving profile -->
+      <SubHandlingData>
+        <Item type="CCarHandlingData">
+          <fBackEndPopUpCarImpulseMult value="0.100000" />
+          <fBackEndPopUpBuildingImpulseMult value="0.030000" />
+          <fBackEndPopUpMaxDeltaSpeed value="0.600000" />
+        </Item>
+        <Item type="NULL" />
+        <Item type="NULL" />
+      </SubHandlingData>
+    </Item>
+  </HandlingData>
+</CHandlingDataMgr>
